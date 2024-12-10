@@ -6,4 +6,4 @@ try:
         day_of_week = (4 + K - 1) % 7
         print(f"Номер дня недели для {K}-го дня года: {day_of_week}")
 except ValueError:
-    print("Ошибка: введите целое число.")
+    print("Ошибка введите число (1-365)")
