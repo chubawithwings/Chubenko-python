@@ -5,7 +5,7 @@ def sum_of_series(n):
     for i in range(1, n + 1):
         total += i
     return total
-n = 20
+n = int(input("Введите число:"))
 result = sum_of_series(n)
 print(f"Сумма чисел от 1 до {n} равна {result}")
 
