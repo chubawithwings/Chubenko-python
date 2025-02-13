@@ -2,9 +2,9 @@
 
 def insert_symbol (C, S, S0):
     return S.replace(C, C + S0)
-S ="nvdjjdvjvjd"
-C = "j"
-S0 = "XXXXX"
+S = input("Введите строку S:")
+C = input("Введите символ C:")
+S0 = input("Введите строку S0:")
 
 result = insert_symbol(C, S, S0)
 print(result)
