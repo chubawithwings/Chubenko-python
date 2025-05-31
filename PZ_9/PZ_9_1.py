@@ -5,7 +5,7 @@ dict1 = {}
 for i in range(7):
     dict1[i] = i ** 3
 print('Исходный:',dict1)
-dict2 = {}
-for i in range(1,6):
-    dict2[i] = i ** 3
+dict2 = dict1.copy()
+dict2.pop(0)  
+dict2.pop(6)
 print("Получившийся:",dict2)

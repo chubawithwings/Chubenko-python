@@ -10,10 +10,11 @@ for zn in text:
         d +=1
 f1.close()
 
-f1 = open('file1','a',encoding='utf-8')
-f1.write('/n')
-f1.write('"Бородино" - Лермонтов М.Ю.')
-f1.close()
+f2 = open('file2.txt','w',encoding='utf-8') 
+f2.write(text)
+f2.write('\n')
+f2.write('"Бородино" - Лермонтов М.Ю.')
+f2.close()
 f1 = open('file1',encoding='utf-8')
 print(f1.read())
 print('Количество знаков препинания:',d)
