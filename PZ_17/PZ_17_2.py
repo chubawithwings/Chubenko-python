@@ -8,14 +8,16 @@ def find_unique():
             return
         a, b, c, d = map(int, values)
 
-        if a == b == c:
-            result = "Порядковый номер отличного числа: 4"
+        if a == b == c == d:
+            result = "Все числа одинаковые"
         elif a == b == d:
             result = "Порядковый номер отличного числа: 3"
         elif a == c == d:
             result = "Порядковый номер отличного числа: 2"
         elif b == c == d:
             result = "Порядковый номер отличного числа: 1"
+        elif a == b == c:
+            result = "Порядковый номер отличного числа: 4"
         else:
             result = "Ошибка: нет одного уникального числа"
     except ValueError:
