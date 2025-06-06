@@ -4,7 +4,7 @@
 
 import re
 
-with open('radio_stations.txt', 'r', encoding='utf-8') as f1:
+with open('PZ_14\\radio_stations.txt', 'r', encoding='utf-8') as f1:
     allfile = f1.read()
 
 res = re.findall(r'[a-z0-9]\w+\.[a-z0-9]\w+\.[a-z0-9]\w+', allfile)
